@@ -14,6 +14,10 @@ $ php artisan db:seed
 `php artisan db:seed` Run seed
 `php artisan db:seed --class=UsersTableSeeder` Run specific seed
 
+## template
+
+https://www.creative-tim.com/product/material-dashboard-dark
+
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
