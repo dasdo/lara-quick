@@ -1,3 +1,15 @@
+## Install
+```
+git clone git@github.com:dasdo/lara-quick.git
+cd lara-quick
+composer install
+php artisan key:generate
+npm install && npm run dev
+cp .env.example .env
+php artisan migrate
+php artisan db:seed
+```
+
 ## Statar
 
 ```
