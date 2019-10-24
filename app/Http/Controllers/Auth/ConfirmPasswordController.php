@@ -20,6 +20,8 @@ class ConfirmPasswordController extends Controller
 
     use ConfirmsPasswords;
 
+    protected $layout = 'layouts.login';
+
     /**
      * Where to redirect users when the intended url fails.
      *

@@ -20,6 +20,8 @@ class VerificationController extends Controller
 
     use VerifiesEmails;
 
+    protected $layout = 'layouts.login';
+
     /**
      * Where to redirect users after verification.
      *

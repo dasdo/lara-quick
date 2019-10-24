@@ -20,6 +20,8 @@ class ResetPasswordController extends Controller
 
     use ResetsPasswords;
 
+    protected $layout = 'layouts.login';
+
     /**
      * Where to redirect users after resetting their password.
      *

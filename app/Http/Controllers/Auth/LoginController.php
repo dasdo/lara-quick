@@ -20,6 +20,8 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+    protected $layout = 'layouts.login';
+
     /**
      * Where to redirect users after login.
      *

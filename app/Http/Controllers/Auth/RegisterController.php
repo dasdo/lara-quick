@@ -23,6 +23,8 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+    protected $layout = 'layouts.login';
+
     /**
      * Where to redirect users after registration.
      *
