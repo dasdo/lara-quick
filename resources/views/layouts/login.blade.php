@@ -22,6 +22,21 @@
     <link href="{{ asset('demo/demo.css') }}" rel="stylesheet">
 </head>
 <body class="dark-edition">
+  <header class="masthead mb-auto">
+        <div class="inner">
+            <nav class="nav nav-masthead justify-content-center links">
+                @auth
+                    <a class="nav-link" href="{{ url('/home') }}">Home</a>
+                @else
+                    <a class="nav-link" href="{{ route('login') }}">Login</a>
+
+                    @if (Route::has('register'))
+                        <a  class="nav-link"href="{{ route('register') }}">Register</a>
+                    @endif
+                @endauth
+            </nav>
+        </div>
+    </header>
   <div class="wrapper " id="app">
     @yield('content')
   </div>

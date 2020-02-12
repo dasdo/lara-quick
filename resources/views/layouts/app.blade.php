@@ -37,10 +37,19 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="/dashboard">
+            <a class="nav-link" href="/home">
               <i class="material-icons">dashboard</i>
               <p>{{ __('Dashboard') }}</p>
             </a>
+          </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+              <i class="material-icons">logout</i>
+              <p>{{ __('Logout') }}</p>
+            </a>
+            @include('../logout')
           </li>
           <!-- your sidebar here -->
         </ul>
